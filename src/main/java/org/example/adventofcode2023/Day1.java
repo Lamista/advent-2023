@@ -24,16 +24,12 @@ public class Day1 {
         return Integer.parseInt(number);
     }
 
-    public static int getSum(List<Integer> integers) {
-        return integers.stream().mapToInt(Integer::intValue).sum();
-    }
-
     public static int getCalibration(List<String> input) {
         List<Integer> numbers = new ArrayList<>();
         for (var s : input) {
             numbers.add(getNumber(replaceWordsToDigits(s)));
         }
-        return getSum(numbers);
+        return Utils.getSum(numbers);
     }
 
     public static String replaceWordsToDigits(String string) {

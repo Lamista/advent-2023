@@ -18,11 +18,6 @@ class Day1Test {
     }
 
     @Test
-    void test_getSum() {
-        assertEquals( 12 + 38 + 15 + 77, day1.getSum(List.of(12, 38, 15, 77)));
-    }
-
-    @Test
     void test_getCalibration() {
         assertEquals( 12 + 38 + 15 + 77, day1.getCalibration(List.of("1abc2", "pqr3stu8vwx", "a1b2c3d4e5f", "treb7uchet")));
     }
