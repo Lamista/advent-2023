@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="687be893-1a8b-4ee9-9d8a-ef75793d379a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Day2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/adventofcode2023/Day2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/adventofcode2023/UtilsTest.java" afterDir="false" />
+    <list default="true" id="687be893-1a8b-4ee9-9d8a-ef75793d379a" name="Changes" comment="Day 2, first part">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day2_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/adventofcode2023/Day2_2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adventofcode2023/Day2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/adventofcode2023/Day1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/adventofcode2023/Day1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -56,7 +54,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -93,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2Test.test_getPossibleGamesSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -102,56 +103,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
-      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day2Test" />
-      <option name="METHOD_NAME" value="test_getPossibleGamesSum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day2Test.test_isPossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.adventofcode2023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
-      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day2Test" />
-      <option name="METHOD_NAME" value="test_isPossible" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day2Test.test_splitGameInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.adventofcode2023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
-      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day2Test" />
-      <option name="METHOD_NAME" value="test_splitGameInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.adventofcode2023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
-      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.UtilsTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day1Test" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day1Test.test_getCalibration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.adventofcode2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
+      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day1Test" />
+      <option name="METHOD_NAME" value="test_getCalibration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day1Test.test_getNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.adventofcode2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
+      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day1Test" />
+      <option name="METHOD_NAME" value="test_getNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2_2Test.test_findSumOfThePowerOfFewestPossibleSets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.adventofcode2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.adventofcode2023" />
+      <option name="MAIN_CLASS_NAME" value="org.example.adventofcode2023.Day2_2Test" />
+      <option name="METHOD_NAME" value="test_findSumOfThePowerOfFewestPossibleSets" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Day2Test.test_getPossibleGamesSum" />
-        <item itemvalue="JUnit.Day2Test.test_splitGameInput" />
-        <item itemvalue="JUnit.Day2Test.test_isPossible" />
-        <item itemvalue="JUnit.UtilsTest" />
+        <item itemvalue="JUnit.Day1Test" />
+        <item itemvalue="JUnit.Day1Test.test_getCalibration" />
+        <item itemvalue="JUnit.Day1Test.test_getNumber" />
+        <item itemvalue="JUnit.Day2_2Test.test_findSumOfThePowerOfFewestPossibleSets" />
       </list>
     </recent_temporary>
   </component>
@@ -175,6 +176,13 @@
       <option name="presentableId" value="Default" />
       <updated>1710520984604</updated>
     </task>
+    <task id="LOCAL−00001" summary="Day 2, first part">
+      <created>1710618344424</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1710618344424</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,5 +195,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day 2, first part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 2, first part" />
   </component>
 </project>

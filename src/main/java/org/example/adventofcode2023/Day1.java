@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Day1 {
+    private static boolean replaceWordsToDigits;
+
+    public static void setReplaceWordsToDigits(boolean replaceWordsToDigits) {
+        Day1.replaceWordsToDigits = replaceWordsToDigits;
+    }
+
     public static int getNumber(String str) {
         String number = "";
         var array = str.toCharArray();
@@ -27,7 +33,7 @@ public class Day1 {
     public static int getCalibration(List<String> input) {
         List<Integer> numbers = new ArrayList<>();
         for (var s : input) {
-            numbers.add(getNumber(replaceWordsToDigits(s)));
+            numbers.add(getNumber(replaceWordsToDigits ? replaceWordsToDigits(s) : s));
         }
         return Utils.getSum(numbers);
     }

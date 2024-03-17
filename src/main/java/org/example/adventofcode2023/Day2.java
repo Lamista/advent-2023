@@ -1,16 +1,11 @@
 package org.example.adventofcode2023;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Day2 {
     private Map<String, Integer> availableCubes;
-
-    public Map<String, Integer> getAvailableCubes() {
-        return availableCubes;
-    }
 
     public void setAvailableCubes(Map<String, Integer> availableCubes) {
         this.availableCubes = availableCubes;
@@ -20,9 +15,9 @@ public class Day2 {
         String[] sets = game.split(";");
         for (var set : sets) {
             for (var subset : set.split(",")) {
-                String[] revealInfo = subset.trim().split(" ");
-                int number = Integer.parseInt(revealInfo[0]);
-                String color = revealInfo[1];
+                String[] drawInfo = subset.trim().split(" ");
+                int number = Integer.parseInt(drawInfo[0]);
+                String color = drawInfo[1];
                 if (availableCubes.get(color) < number) return false;
             }
         }

@@ -20,10 +20,15 @@ class Day1Test {
     @Test
     void test_getCalibration() {
         assertEquals( 12 + 38 + 15 + 77, day1.getCalibration(List.of("1abc2", "pqr3stu8vwx", "a1b2c3d4e5f", "treb7uchet")));
+        Day1.setReplaceWordsToDigits(true);
+        assertEquals( 32 + 38 + 15 + 77, day1.getCalibration(List.of("three1abc2", "pqr3stu8vwx", "a1b2c3d4e5f", "treb7uchet")));
+        Day1.setReplaceWordsToDigits(false);
+        assertEquals( 12 + 38 + 15 + 77, day1.getCalibration(List.of("three1abc2", "pqr3stu8vwx", "a1b2c3d4e5f", "treb7uchet")));
     }
 
     @Test
     void test_replaceWordsToDigits() {
+        Day1.setReplaceWordsToDigits(true);
         assertEquals("219", day1.replaceWordsToDigits("two1nine"));
         assertEquals("823", day1.replaceWordsToDigits("eightwothree"));
         assertEquals("123", day1.replaceWordsToDigits("abcone2threexyz"));
